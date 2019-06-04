@@ -1,0 +1,39 @@
+ul {
+    position: relative;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-top: 4em;
+}
+
+ul li a, ul li a:hover {
+    position: relative;
+    color: #dddddd;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 4em;
+}
+
+ul li a:before {
+    content: attr(data-text);
+    position: absolute;
+    top: -26px;
+    left: 40px;
+    z-index: 1;
+    color: #272727;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+
+}
+
+ul li:hover a:before {
+    width: 0;
+}
+
+.mat-action-list .mat-list-item:focus, .mat-action-list .mat-list-item:hover, .mat-list-option:focus, .mat-list-option:hover, .mat-nav-list .mat-list-item:focus, .mat-nav-list .mat-list-item:hover {
+    background: rgba(0, 0, 0, 0);
+}

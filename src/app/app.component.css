@@ -1,0 +1,12 @@
+mat-sidenav-container, mat-sidenav , mat-sidenav-content {
+    height:100%;
+}
+mat-sidenav{
+    width:100%;
+}
+mat-sidenav{
+    width: 100%;
+
+    background:url(../assets/products/image2.jpg) center center no-repeat;
+    background-size: cover;
+}
